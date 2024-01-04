@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Focus Timer</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Roboto medium (500) font -->
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+    <script type="module" src="./source/main.js" defer></script>
+  </head>
+  <body>
+    <div id="app">
+      <section id="left">
+        <section id="timer">
+          <span id="minutes">25</span>
+          <span>:</span>
+          <span id="seconds">00</span>
+        </section>
+
+        <section id="controls">
+          <button data-action="toggleRunning" class="ph ph-play-circle">
+            <span class="sr-only">Start time counter</span>
+          </button>
+
+          <button data-action="stop" class="ph ph-stop-circle">
+            <span class="sr-only">Stop time counter</span>
+          </button>
+
+          <button data-action="increaseTime" class="ph ph-plus-circle">
+            <span class="sr-only">Increase time counter</span>
+          </button>
+
+          <button data-action="decreaseTime" class="ph ph-minus-circle">
+            <span class="sr-only">Decrease time counter</span>
+          </button>
+        </section>
+      </section>
+
+      <section id="right">
+        <div id="upside">
+          <button data-action="forest" class="ph ph-tree">
+            <span class="sr-only">Start forest music</span>
+          </button>
+
+          <button data-action="rain" class="ph ph-cloud-rain">
+            <span class="sr-only">Start rain music</span>
+          </button>
+        </div>
+
+        <div id="bottom">
+          <button data-action="coffeeShop" class="ph ph-storefront">
+            <span class="sr-only">Start coffee shop music</span>
+          </button>
+
+          <button data-action="fireplace" class="ph ph-flame">
+            <span class="sr-only">Start fireplace music</span>
+          </button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
