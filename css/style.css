@@ -1,3 +1,4 @@
+/* Standard/Computer */
 * {
     margin: 0;
     padding: 0;
@@ -113,4 +114,73 @@
   #right #bottom button.active {
     background-color: #02799D;
     color: #FFFFFF;
+  }
+
+  @media (max-width: 640px) {
+    :root {
+      font-size: 40%;
+    }
+  
+    #app {
+      grid-template-areas: "A A A A"
+      "B B B B";
+    }
+
+    #app #left{
+      grid-area: A;
+      margin-right: 0;
+      margin-bottom: 4rem;
+    }
+
+    #app #right {
+      grid-area: B;
+      margin-bottom: 8rem;
+    }
+  }
+  /* Phones */
+  @media (min-width: 640px) and (max-width: 1280px) {
+    :root{
+      font-size: 51.25%;
+    }
+
+    #app {
+      grid-template-areas: "A A A A"
+      "B B B B";
+    }
+
+    #app #left{
+      grid-area: A;
+      margin-right: 0;
+      margin-bottom: 4rem;
+    }
+
+    #app #right {
+      grid-area: B;
+    }
+    
+  }
+
+  /* Tablets */
+  @media screen and (max-width: 1280px) and (min-height: 1024px) {
+    
+    :root{
+      font-size: 51.25%;
+    }
+
+    #app {
+      grid-template-areas: "A A A A"
+      "B B B B";
+    }
+
+    #app #left{
+      grid-area: A;
+      margin-right: 0;
+      margin-bottom: 4rem;
+    }
+
+    #app #right {
+      grid-area: B;
+      margin-bottom: 56rem;
+    }
+
   }
