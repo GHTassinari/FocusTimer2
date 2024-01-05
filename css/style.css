@@ -1,4 +1,4 @@
-/* Standard/Computer */
+/* Standar/Computer */
 * {
     margin: 0;
     padding: 0;
@@ -180,7 +180,7 @@
 
     #app #right {
       grid-area: B;
-      margin-bottom: 56rem;
+      margin-bottom: 48rem;
     }
 
   }
