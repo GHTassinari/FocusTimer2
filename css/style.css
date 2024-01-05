@@ -155,9 +155,7 @@
     }
 
     #app #left #timer {
-      align-items: center;
-      display: flex;
-      justify-content: center;
+      width: 100vw;
     }
 
     #app #right {
@@ -185,9 +183,7 @@
     }
 
     #app #left #timer {
-      align-items: center;
-      display: flex;
-      justify-content: center;
+      width: 100vw;
     }
 
     #app #right {
