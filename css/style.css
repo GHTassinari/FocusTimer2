@@ -24,10 +24,8 @@
   body {
     background-color: var(--bg-color);
     color: var(--text-color);
-    display: grid;
+    display: flex;
     height: 100vh;
-    place-content: center;
-
   }
 
   #app {
@@ -38,6 +36,8 @@
     "A A B B";
 
     gap: 19.2rem;
+
+    margin: 19.6rem 22.6rem 18.8rem 23.3rem;
   }
 
   #timer {
@@ -78,10 +78,39 @@
   #left #controls button {
     font-size: 4.8rem;
   }
+  
+  #right{
+    grid-template-areas: "A A A A"
+    "B B B B";
+  }
+  
+  #right #upside{
+    grid-area: A;
+    display: flex;
+    gap: 3.2rem;
+  }
+
+  #right #bottom{
+    margin-top: 3.2rem;
+    display: flex;
+    grid-area: B;
+    gap: 3.2rem;
+  }
 
   #right div button {
     all: unset;
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-size: 5.6rem;
-    max-width: 4.42rem;
+    width: 13.8rem;
+    height: 15.2rem;
+    background-color: #E1E1E6;
+    border-radius: 2.4rem;
+  }
+
+  #right #upside button.active,
+  #right #bottom button.active {
+    background-color: #02799D;
+    color: #FFFFFF;
   }
