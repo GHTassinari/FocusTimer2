@@ -154,10 +154,6 @@
       margin-bottom: 4rem;
     }
 
-    #app #left #timer {
-      width: 100vw;
-    }
-
     #app #right {
       grid-area: B;
     }
@@ -180,10 +176,6 @@
       grid-area: A;
       margin-right: 0;
       margin-bottom: 4rem;
-    }
-
-    #app #left #timer {
-      width: 100vw;
     }
 
     #app #right {
