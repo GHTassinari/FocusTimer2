@@ -24,8 +24,11 @@
   body {
     background-color: var(--bg-color);
     color: var(--text-color);
-    display: flex;
+    width: 100wh;
     height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   #app {
@@ -34,10 +37,6 @@
 
     grid-template-areas: "A A B B"
     "A A B B";
-
-    gap: 19.2rem;
-
-    margin: 19.6rem 22.6rem 18.8rem 23.3rem;
   }
 
   #timer {
@@ -52,7 +51,8 @@
     grid-template-areas: "A A A A"
     "B B B B";
 
-     grid-area: A;
+    grid-area: A;
+    margin-right: 19.2rem;
   }
 
   #left button{
