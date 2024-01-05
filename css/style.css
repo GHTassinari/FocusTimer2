@@ -36,10 +36,12 @@
 
     grid-template-areas: "A A B B"
     "A A B B";
+
+    gap: 19.2rem;
   }
 
   #timer {
-    font-size: 12rem;
+    font-size: 12.6rem;
     font-weight: 500;
     font-family: "Roboto", sans-serif;
   }
@@ -53,8 +55,14 @@
      grid-area: A;
   }
 
+  #left button{
+
+    all: unset;
+
+  }
   #left #timer{
     grid-area: A;
+
   }
 
   #left #controls{
@@ -64,8 +72,16 @@
     margin-top: 4.8rem;
     justify-content: center;
     gap: 4rem;
+    
   }
 
   #left #controls button {
     font-size: 4.8rem;
+  }
+
+  #right div button {
+    all: unset;
+
+    font-size: 5.6rem;
+    max-width: 4.42rem;
   }
