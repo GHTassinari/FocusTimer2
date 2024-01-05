@@ -184,12 +184,11 @@
       margin-bottom: 4rem;
     }
 
-    #app #left{
-      grid-area: A;
-      margin-right: 0;
-      margin-bottom: 4rem;
+    #app #left #timer {
+      align-items: center;
+      display: flex;
+      justify-content: center;
     }
-
 
     #app #right {
       grid-area: B;
