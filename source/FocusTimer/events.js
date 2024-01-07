@@ -1,4 +1,4 @@
-import { timerControls, musicControls, musicButtons } from "./elements.js";
+import { timerControls, musicControls } from "./elements.js";
 import * as actions from "./actions.js";
 
 function registerControls(controls) {

@@ -10,6 +10,4 @@ export function start(minutes, seconds) {
 
   events.registerControlsMusic();
   events.registerControlsTimer();
-  events.setMinutes();
-  events.registerGlobalKeyEvents();
 }
