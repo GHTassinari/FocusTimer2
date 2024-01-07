@@ -6,9 +6,6 @@ function registerControls(controls) {
     const action = event.target.dataset.action;
     if (typeof actions[action] === "function") {
       actions[action]();
-    } else if (musicButtons[action]) {
-      actions.startMusic(action);
-      toggleActiveButton(action);
     }
   });
 }
