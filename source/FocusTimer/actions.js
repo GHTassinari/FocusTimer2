@@ -36,20 +36,3 @@ export function decreaseTime() {
   timer.updateDisplay();
   state.seconds = originalSeconds;
 }
-
-export function startMusic(musicType) {
-  stopAllMusic();
-  state.activeMusic = musicType;
-  sounds[musicType].play();
-}
-
-export function stopAllMusic() {
-  const musicTypes = ["cafeteriaMusic", "fireplaceMusic", "rainMusic", "forestMusic"];
-  musicTypes.forEach((musicType) => {
-    if (state.activeMusic === musicType) {
-      state.activeMusic = null;
-      sounds[musicType].pause();
-      sounds[musicType].currentTime = 0;
-    }
-  });
-}

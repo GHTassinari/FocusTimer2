@@ -13,24 +13,9 @@ function registerControls(controls) {
   });
 }
 
-function toggleActiveButton(musicType) {
-  const button = musicButtons[musicType];
-  button.classList.toggle("active");
-}
-
 export function registerControlsMusic() {
   const musicControlsElement = musicControls;
   registerControls(musicControlsElement);
-  
-  Object.values(musicButtons).forEach((button) => {
-    button.addEventListener("click", (event) => {
-      const action = event.target.dataset.action;
-      if (typeof actions[action] === "function") {
-        actions[action]();
-      }
-      toggleActiveButton(action);
-    });
-  });
 }
 
 export function registerControlsTimer() {

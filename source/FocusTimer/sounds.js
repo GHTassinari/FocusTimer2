@@ -7,13 +7,4 @@ export const fireplaceMusic = new Audio("./assets/fireplace.wav");
 export const rainMusic = new Audio("./assets/rain.wav");
 export const forestMusic = new Audio("./assets/forest.wav");
 
-const allMusics = [cafeteriaMusic, fireplaceMusic, rainMusic, forestMusic];
-
-allMusics.forEach((music) => {
-  music.loop = true;
-  music.addEventListener("ended", () => {
-    if (music.paused) return;
-    music.pause();
-    music.currentTime = 0;
-  });
-});
+cafeteriaMusic.loop = true, fireplaceMusic.loop = true, rainMusic.loop = true, forestMusic.loop = true;
