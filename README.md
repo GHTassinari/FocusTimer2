@@ -5,10 +5,10 @@ I used multiple javascript techiniques, mostly changing HTML classes to do certa
 - A play and stop button
 - An increase 5 minutes and a decrease 5 minutes button
 - Buttons with sounds for concentration, including:
-- Coffee Shop music
-- Fireplace noise
-- Rain noise
-- Forest noises
+* Coffee Shop music
+* Fireplace noise
+* Rain noise
+* Forest noises
 
 The project is available at: [https://focus-timer2-three.vercel.app/](https://focus-timer2-three.vercel.app/)
 
